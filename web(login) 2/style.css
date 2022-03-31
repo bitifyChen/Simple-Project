@@ -1,0 +1,166 @@
+/*========== Google Font ============*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap");
+:root {
+  --mainColor:#5C9261;
+  --mainHoverColor:#84b489;
+  --bgcColor:#1D2934;
+  --subColor:#0e0e0e;
+  --lightFont:#bec0c2;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#050518), to(var(--bgcColor)));
+  background: linear-gradient(#050518, var(--bgcColor));
+}
+
+main {
+  height: 100vh;
+  aspect-ratio: 9/16;
+  min-width: 252px;
+  min-height: 448px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#050518), to(var(--bgcColor)));
+  background: linear-gradient(#050518, var(--bgcColor));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section .container {
+  width: 80%;
+}
+
+section.logo img {
+  width: 100%;
+}
+
+section.form form {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+section.form form label {
+  color: var(--lightFont);
+}
+
+section.form form .text-group h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: .2em;
+}
+
+section.form form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px;
+}
+
+section.form form .input-group label {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+section.form form .input-group input {
+  color: white;
+  border: none;
+  background-color: var(--subColor);
+  padding: 10px 10px;
+}
+
+section.form form .input-group input:focus {
+  outline: none;
+}
+
+section.form form .input-group .sub-text {
+  text-align: right;
+  margin: 5px 0px;
+  font-size: 12px;
+}
+
+section.form form .input-group .link {
+  color: var(--mainColor);
+}
+
+section.form form .input-group .link:hover {
+  color: var(--mainHoverColor);
+}
+
+section.form form .btn-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+section.form form .btn-groups .btn-group + .btn-group {
+  padding-left: 5px;
+}
+
+section.form form .btn-groups button + button {
+  margin-left: 5px;
+}
+
+section.form form button {
+  background-color: var(--subColor);
+  border: 2px solid var(--subColor);
+  color: var(--lightFont);
+  font-weight: 900;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+section.form form button[type=submit] {
+  color: var(--mainColor);
+}
+
+section.form form button:hover {
+  background: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/*# sourceMappingURL=style.css.map */

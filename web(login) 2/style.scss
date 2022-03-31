@@ -1,0 +1,120 @@
+/*========== Google Font ============*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap'); //font-family: 'Noto Sans TC', sans-serif;
+
+:root{
+  --mainColor:#5C9261;
+  --mainHoverColor:#84b489;
+  --bgcColor:#1D2934;
+  --subColor:#0e0e0e;
+  --lightFont:#bec0c2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(rgb(5, 5, 24),var(--bgcColor)) ;
+}
+main {
+  height: 100vh;
+  aspect-ratio: 9/16;
+  min-width: 252px;
+  min-height: 448px;
+  background:linear-gradient(rgb(5, 5, 24),var(--bgcColor)) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .container {
+    width: 80%;
+  }
+}
+
+section.logo {
+  img {
+    width: 100%;
+  }
+}
+
+section.form {
+  form {
+    background-color: rgba(0,0,0,.2);
+    padding: 30px;
+    border-radius: 10px;
+    label {
+      color: var(--lightFont);
+    }
+    .text-group h2{
+      text-align: center;
+      color: white;
+      font-family: 'Noto Sans TC', sans-serif;
+      letter-spacing: .2em;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+      label{
+          margin-bottom: 5px;
+          font-weight: 900;
+      }
+      input{
+        color: white;
+        border: none;
+        background-color: var(--subColor);
+        padding: 10px 10px;
+        &:focus{
+          outline: none;
+        }
+      }
+      .sub-text{
+        text-align: right;
+        margin: 5px 0px;
+        font-size: 12px;
+      }
+      .link{
+        color: var(--mainColor);
+        &:hover{
+          color: var(--mainHoverColor);
+        }
+      }
+    }
+    .btn-groups {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 20px 0px;
+      .btn-group + .btn-group{
+          padding-left: 5px;
+      }
+      button + button {
+        margin-left: 5px;
+      }
+    }
+    
+    button {
+      background-color: var(--subColor);
+      border: 2px solid var(--subColor);
+      color: var(--lightFont);
+      font-weight: 900;
+      width: 100%;
+      padding: 10px;
+      &[type=submit]{
+        color: var(--mainColor);
+      }
+      cursor: pointer;
+      &:hover {
+        background:var(--mainColor);
+        border: 2px solid var(--mainColor);
+        color: white;
+        transition: all 0.3s linear;
+      }
+    }
+  }
+}
