@@ -1,11 +1,39 @@
 /*========== Google Font ============*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap");
 :root {
-  --mainColor:#5C9261;
-  --mainHoverColor:#84b489;
+  --mainColor:#4198C8;
+  --mainHoverColor:#1C73A6;
   --bgcColor:#1D2934;
-  --subColor:#0e0e0e;
-  --lightFont:#bec0c2;
+  --subColor:#1C73A6;
+  --lightFont:#ebf7fd;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
 }
 
 body {
@@ -18,8 +46,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#050518), to(var(--bgcColor)));
-  background: linear-gradient(#050518, var(--bgcColor));
+  background: url("img/bgc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -27,8 +56,6 @@ main {
   aspect-ratio: 9/16;
   min-width: 252px;
   min-height: 448px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#050518), to(var(--bgcColor)));
-  background: linear-gradient(#050518, var(--bgcColor));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,9 +90,9 @@ section.logo img {
 }
 
 section.form form {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #70BFE0;
+  margin-top: 10px;
   padding: 30px;
-  border-radius: 10px;
 }
 
 section.form form label {
@@ -162,5 +189,13 @@ section.form form button:hover {
   color: white;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+@media (min-width: 900px) {
+  main {
+    margin-left: 50%;
+    max-width: 550px;
+    aspect-ratio: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */

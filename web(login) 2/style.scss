@@ -2,25 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap'); //font-family: 'Noto Sans TC', sans-serif;
 
 :root{
-  --mainColor:#5C9261;
-  --mainHoverColor:#84b489;
+  --mainColor:#4198C8;
+  --mainHoverColor:#1C73A6;
   --bgcColor:#1D2934;
-  --subColor:#0e0e0e;
-  --lightFont:#bec0c2;
+  --subColor:#1C73A6;
+  --lightFont:#ebf7fd;
 }
-
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(rgb(5, 5, 24),var(--bgcColor)) ;
+  background:url('img/bgc.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main {
   height: 100vh;
   aspect-ratio: 9/16;
   min-width: 252px;
   min-height: 448px;
-  background:linear-gradient(rgb(5, 5, 24),var(--bgcColor)) ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +40,7 @@ section {
   }
 }
 
+
 section.logo {
   img {
     width: 100%;
@@ -44,9 +49,9 @@ section.logo {
 
 section.form {
   form {
-    background-color: rgba(0,0,0,.2);
+    background-color: #70BFE0;
+    margin-top: 10px;
     padding: 30px;
-    border-radius: 10px;
     label {
       color: var(--lightFont);
     }
@@ -116,5 +121,14 @@ section.form {
         transition: all 0.3s linear;
       }
     }
+  }
+}
+
+
+@media (min-width:900px) {
+  main{
+    margin-left:50%;
+    max-width: 550px;
+    aspect-ratio: unset;
   }
 }
